@@ -4,11 +4,6 @@ import com.hirecore.hirecore.dominio.evento.EventoDominio;
 import com.hirecore.hirecore.notificacion.PublicarEventos;
 import org.springframework.stereotype.Component;
 
-/**
- * Invoker del patrón Command: único punto que corre comandos.
- * En orden: ejecuta, guarda en historial y publica el evento.
- * Depende de {@link PublicarEventos}, nunca de {@code BusEventos} (DIP).
- */
 @Component
 public class EjecutorComandos {
 

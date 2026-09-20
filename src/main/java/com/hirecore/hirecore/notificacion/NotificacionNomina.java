@@ -7,9 +7,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-/**
- * Nómina solo actúa cuando el candidato queda contratado.
- */
 @Component
 public class NotificacionNomina implements AvisarObserver {
 

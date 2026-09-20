@@ -1,8 +1,5 @@
 package com.hirecore.hirecore.dominio.estado;
 
-/**
- * Estado terminal: el candidato ya fue contratado.
- */
 public class EstadoContratado extends EstadoBase {
 
     @Override

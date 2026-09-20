@@ -4,10 +4,6 @@ import com.hirecore.hirecore.dominio.estado.EstadoCandidato;
 
 import java.util.Objects;
 
-/**
- * Entidad cuyo estado no se muta “a mano” desde el resto del sistema:
- * el cambio llega a través de un comando, y las reglas las impone el estado actual.
- */
 public class Candidato {
 
     private final String id;
@@ -26,10 +22,6 @@ public class Candidato {
         return estado;
     }
 
-    /**
-     * Asigna el estado. No valida transiciones: eso lo hace {@link EstadoCandidato#avanzar}.
-     * El deshacer del comando también usa este método para restaurar sin revalidar.
-     */
     public void cambiarEstado(EstadoCandidato nuevoEstado) {
         this.estado = Objects.requireNonNull(nuevoEstado, "nuevoEstado");
     }

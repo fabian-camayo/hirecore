@@ -1,8 +1,5 @@
 package com.hirecore.hirecore.dominio.estado;
 
-/**
- * Estado terminal: no admite más transiciones.
- */
 public class EstadoRechazado extends EstadoBase {
 
     @Override

@@ -2,10 +2,6 @@ package com.hirecore.hirecore.dominio.estado;
 
 import org.springframework.stereotype.Component;
 
-/**
- * Crea la instancia concreta de {@link EstadoCandidato} a partir de su nombre.
- * Así el comando no instancia estados a mano ni conoce todas las clases.
- */
 @Component
 public class EstadoFactory {
 

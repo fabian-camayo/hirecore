@@ -7,9 +7,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-/**
- * El gerente solo se entera cuando el candidato llega a oferta o contratación.
- */
 @Component
 public class NotificarGerente implements AvisarObserver {
 

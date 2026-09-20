@@ -3,9 +3,6 @@ package com.hirecore.hirecore.dominio.evento;
 import java.time.Instant;
 import java.util.Objects;
 
-/**
- * Evento publicado cuando se deshace un cambio de estado.
- */
 public record CambioRevertido(
         String candidatoId,
         String estadoRestaurado,

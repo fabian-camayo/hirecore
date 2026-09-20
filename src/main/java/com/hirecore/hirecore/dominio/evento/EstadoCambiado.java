@@ -3,9 +3,6 @@ package com.hirecore.hirecore.dominio.evento;
 import java.time.Instant;
 import java.util.Objects;
 
-/**
- * Evento publicado cuando un comando cambia el estado de un candidato.
- */
 public record EstadoCambiado(
         String candidatoId,
         String estadoAnterior,

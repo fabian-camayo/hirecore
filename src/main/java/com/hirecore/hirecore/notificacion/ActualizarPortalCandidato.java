@@ -7,9 +7,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-/**
- * El portal del candidato refleja el estado vigente, incluido si se deshace un cambio.
- */
 @Component
 public class ActualizarPortalCandidato implements AvisarObserver {
 

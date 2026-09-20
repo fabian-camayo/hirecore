@@ -7,9 +7,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-/**
- * El reclutador se entera de todo cambio o reversión de estado.
- */
 @Component
 public class NotificarReclutador implements AvisarObserver {
 

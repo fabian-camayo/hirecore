@@ -12,10 +12,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
-/**
- * Recorre el flujo de la arquitectura al arrancar la aplicación:
- * comando → ejecutor → estado → evento → observadores, más un deshacer.
- */
 @Component
 @ConditionalOnProperty(name = "hirecore.demo.enabled", havingValue = "true", matchIfMissing = true)
 public class DemostracionArquitectura implements CommandLineRunner {

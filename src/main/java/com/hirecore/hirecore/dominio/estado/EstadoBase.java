@@ -5,9 +5,6 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-/**
- * Igualdad por nombre y helper para declarar transiciones permitidas.
- */
 abstract class EstadoBase implements EstadoCandidato {
 
     protected final boolean permite(EstadoCandidato destino, NombreEstado... permitidos) {

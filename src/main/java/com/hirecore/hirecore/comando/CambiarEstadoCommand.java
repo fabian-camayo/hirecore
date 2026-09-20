@@ -9,11 +9,6 @@ import com.hirecore.hirecore.dominio.evento.EventoDominio;
 
 import java.util.Objects;
 
-/**
- * Comando que cambia el estado de un candidato.
- * Guarda candidato, estado nuevo, estado anterior (para deshacer) y autor.
- * No valida la transición: eso lo hace el objeto estado al avanzar.
- */
 public class CambiarEstadoCommand implements ComandoCandidato {
 
     private final Candidato candidato;
@@ -47,7 +42,6 @@ public class CambiarEstadoCommand implements ComandoCandidato {
         if (estadoAnterior == null) {
             throw new IllegalStateException("No se puede deshacer un comando que aún no se ejecutó");
         }
-        // Restaura sin revalidar: deshacer no es una transición de negocio.
         candidato.cambiarEstado(factory.crear(estadoAnterior.nombre()));
         return new CambioRevertido(candidato.getId(), candidato.obtenerEstado().nombre(), autor);
     }

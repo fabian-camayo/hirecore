@@ -1,8 +1,5 @@
 package com.hirecore.hirecore.dominio.excepcion;
 
-/**
- * Se lanza cuando el estado actual no permite pasar al estado destino.
- */
 public class TransicionEstadoInvalidaException extends RuntimeException {
 
     private final String estadoActual;

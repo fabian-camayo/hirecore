@@ -1,8 +1,5 @@
 package com.hirecore.hirecore.dominio.estado;
 
-/**
- * Nombres canónicos de los estados del proceso de selección.
- */
 public enum NombreEstado {
     APLICADO,
     ENTREVISTA,

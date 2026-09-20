@@ -6,9 +6,6 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-/**
- * Pila de comandos ya ejecutados, para poder deshacerlos en orden inverso.
- */
 @Component
 public class HistorialComandos {
 
