@@ -4,6 +4,13 @@ Aplicación Spring Boot que modela el cambio de estado de un candidato con los p
 
 Al arrancar, corre una demostración en consola que recorre ese flujo de punta a punta.
 
+## Integrantes
+
+- Alexander Marin Villa
+- Leidy Melissa Trejos Pamplona
+- Sebastian Vargas Guarin
+- Fabian Andres Muñoz Camayo
+
 ## Cómo ejecutar la demostración
 
 ```bash
